@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calculator.css" />
+    <script
+      src="https://kit.fontawesome.com/5bfe23d569.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="calculator.js"></script>
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator-form">
+        <div class="input-fields">
+          <input type="number" id="numeral-1" name="numeral-1" />
+          <input type="number" id="numeral-2" name="numeral-2" />
+        </div>
+        <div class="buttons-math-operations">
+          <button id="addition" class="addition">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button id="subtraction" class="subtraction">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button id="multiplication" class="multiplication">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button id="division" class="division">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+          <button id="exponentiation" class="exponentiation">
+            <i class="fa-solid fa-superscript"></i>
+          </button>
+          <button id="remainder" class="remainder">
+            <i class="fa-solid fa-percent"></i>
+          </button>
+        </div>
+        <div class="output-field">
+          <input readonly id="result" type="number" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
