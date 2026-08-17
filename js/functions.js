@@ -7,20 +7,23 @@ function variableOutput(
   multiplicationBtn,
   divisionBtn,
   exponentiationBtn,
-  remainderBtn
+  remainderBtn,
+  input,
 ) {
-  inputs.forEach((input) => {
-    if (input.value !== "") {
-      additionBtn.disabled = false;
-      subtractionBtn.disabled = false;
-      multiplicationBtn.disabled = false;
-      divisionBtn.disabled = false;
-      exponentiationBtn.disabled = false;
-      remainderBtn.disabled = false;
+  const isEnabled = inputs.every((inputs) => {
+    if (inputs.value !== "") {
+      return;
     } else {
       console.log("введите значения");
     }
   });
+  console.log(inputs.every((elem) => elem.value !== ""));
+  additionBtn.disabled = false;
+  subtractionBtn.disabled = false;
+  multiplicationBtn.disabled = false;
+  divisionBtn.disabled = false;
+  exponentiationBtn.disabled = false;
+  remainderBtn.disabled = false;
 }
 
 function OnChangeInput(
@@ -31,17 +34,21 @@ function OnChangeInput(
   divisionBtn,
   exponentiationBtn,
   remainderBtn,
-input) {
-input.addEventListener ("input", () =>
-variableOutput( 
-  inputs,
-  additionBtn,
-  subtractionBtn,
-  multiplicationBtn,
-  divisionBtn,
-  exponentiationBtn,
-  remainderBtn);
-)}
+) {
+  inputs.forEach((input) => {
+    input.addEventListener("input", () =>
+      variableOutput(
+        inputs,
+        additionBtn,
+        subtractionBtn,
+        multiplicationBtn,
+        divisionBtn,
+        exponentiationBtn,
+        remainderBtn,
+      ),
+    );
+  });
+}
 
 function addition() {}
 
