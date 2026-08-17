@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const divisionBtn = document.getElementById("divisionBtn");
   const exponentiationBtn = document.getElementById("exponentiationBtn");
   const remainderBtn = document.getElementById("remainderBtn");
-  const inputs = document.querySelectorAll("input");
+  const inputs = [
+    document.getElementById("numeral1"),
+    document.getElementById("numeral2"),
+  ];
   const result = document.getElementById("result");
 
   console.log(
@@ -28,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //     variableOutput(numeral1, numeral2);
   //   }),
   // );
-  variableOutput(
+
+  OnChangeInput(
     inputs,
     additionBtn,
     subtractionBtn,
@@ -37,5 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
     exponentiationBtn,
     remainderBtn,
   );
-  console.log(typeof "numeral1");
 });
