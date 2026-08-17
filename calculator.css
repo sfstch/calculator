@@ -12,7 +12,7 @@ body{
     width: 750px;
     height: 350px;
     background-color:#124c64;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 6px 6px #5889a1;
 }
 
@@ -26,9 +26,8 @@ body{
     width: 100%;
 }
 
-.input-fields{
+.input-fields {
    display: flex;
-   justify-content: space-between;
    gap: 20px;
 }
 
@@ -36,6 +35,8 @@ input{
     width: 100%;
     height: 60px;
     background-color: #78aebd;
+    padding: 0;
+    border: 0
 }
 
 .buttons-math-operations{
@@ -45,9 +46,4 @@ input{
 }
 button{
     height: 45px;
-}
-
-.output-field{
-    display: flex;
-    padding: 0;
 }

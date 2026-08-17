@@ -1,44 +1,44 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF8" />
     <link rel="stylesheet" href="calculator.css" />
     <script
       src="https://kit.fontawesome.com/5bfe23d569.js"
       crossorigin="anonymous"
     ></script>
-    <script src="calculator.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/calculator.js"></script>
     <title>calculator</title>
   </head>
   <body>
     <div class="calculator-container">
       <div class="calculator-form">
         <div class="input-fields">
-          <input type="number" id="numeral-1" name="numeral-1" />
-          <input type="number" id="numeral-2" name="numeral-2" />
+          <input type="number" id="numeral1" name="numeral-1" />
+          <input type="number" id="numeral2" name="numeral-2" />
         </div>
         <div class="buttons-math-operations">
-          <button id="addition" class="addition">
+          <button id="additionBtn" class="addition" disabled>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <button id="subtraction" class="subtraction">
+          <button id="subtractionBtn" class="subtraction" disabled>
             <i class="fa-solid fa-minus"></i>
           </button>
-          <button id="multiplication" class="multiplication">
+          <button id="multiplicationBtn" class="multiplication" disabled>
             <i class="fa-solid fa-xmark"></i>
           </button>
-          <button id="division" class="division">
+          <button id="divisionBtn" class="division" disabled>
             <i class="fa-solid fa-divide"></i>
           </button>
-          <button id="exponentiation" class="exponentiation">
+          <button id="exponentiationBtn" class="exponentiation" disabled>
             <i class="fa-solid fa-superscript"></i>
           </button>
-          <button id="remainder" class="remainder">
+          <button id="remainderBtn" class="remainder" disabled>
             <i class="fa-solid fa-percent"></i>
           </button>
         </div>
-        <div class="output-field">
-          <input readonly id="result" type="number" />
-        </div>
+        <input readonly id="result" type="number" />
       </div>
     </div>
   </body>
