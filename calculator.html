@@ -12,34 +12,49 @@
     <title>calculator</title>
   </head>
   <body>
-    <div class="calculator-container">
-      <div class="calculator-form">
-        <div class="input-fields">
-          <input type="number" id="numeral1" name="numeral-1" />
-          <input type="number" id="numeral2" name="numeral-2" />
-        </div>
-        <div class="buttons-math-operations">
-          <button id="additionBtn" class="addition" disabled>
-            <i class="fa-solid fa-plus"></i>
-          </button>
-          <button id="subtractionBtn" class="subtraction" disabled>
-            <i class="fa-solid fa-minus"></i>
-          </button>
-          <button id="multiplicationBtn" class="multiplication" disabled>
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <button id="divisionBtn" class="division" disabled>
-            <i class="fa-solid fa-divide"></i>
-          </button>
-          <button id="exponentiationBtn" class="exponentiation" disabled>
-            <i class="fa-solid fa-superscript"></i>
-          </button>
-          <button id="remainderBtn" class="remainder" disabled>
-            <i class="fa-solid fa-percent"></i>
-          </button>
-        </div>
-        <output id="result" type="number"></output>
+    <div class="calculator-form">
+      <div class="input-fields">
+        <input
+          type="number"
+          id="numeral1"
+          name="numeral-1"
+          placeholder="введите знчение"
+        />
+        <input
+          type="number"
+          id="numeral2"
+          name="numeral-2"
+          placeholder="введите знчение"
+        />
+        <button
+          title="инструкция калькулятор"
+          data-tooltip="ИНСТРУКЦИЯ КАЛЬКУЛЯТОР 1. введите значения в левое поле и правое поле 2. нажмите кнопку с необходимой операцией"
+          id="button-info"
+        >
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
       </div>
+      <div class="buttons-math-operations">
+        <button id="additionBtn" disabled>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button id="subtractionBtn" disabled>
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button id="multiplicationBtn" disabled>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="divisionBtn" disabled>
+          <i class="fa-solid fa-divide"></i>
+        </button>
+        <button id="exponentiationBtn" disabled>
+          <i class="fa-solid fa-superscript"></i>
+        </button>
+        <button id="remainderBtn" disabled>
+          <i class="fa-solid fa-percent"></i>
+        </button>
+      </div>
+      <output id="result" type="number"></output>
     </div>
   </body>
 </html>
