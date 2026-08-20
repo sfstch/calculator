@@ -19,16 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     exponentiationBtn,
     remainderBtn,
   ];
-
-  // let numeral1 = document.getElementById("numeral1".value);
-  // let numeral2 = document.getElementById("numeral2".value);
-
-  console.log(
-    "ИНСТРУКЦИЯ КАЛЬКУЛЯТОР    " +
-      "1. введите значения в левое поле и правое поле  " +
-      "2. нажмите кнопку с необходимой операцией  ",
-  );
-
+  const infoBtn = document.getElementById("button-info");
+  infoBtn.addEventListener("click", () => tooltip());
   buttonsMathOperations.forEach((elem) =>
     elem.addEventListener("click", () => assignment()),
   );

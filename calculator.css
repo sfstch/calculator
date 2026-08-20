@@ -7,14 +7,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-.calculator-container{
-    display: flex;
-    width: 750px;
-    height: 350px;
-    background-color:#124c64;
-    border-radius: 10px;
-    box-shadow: 6px 6px #5889a1;
-}
 
 .calculator-form{
     display: flex;
@@ -24,7 +16,13 @@ body{
     padding: 40px;
     height: 100%;
     width: 100%;
+    width: 750px;
+    height: 350px;
+    background-color:#124c64;
+    border-radius: 10px;
+    box-shadow: 6px 6px #5889a1;
 }
+
 
 .input-fields {
    display: flex;
@@ -36,14 +34,23 @@ input, output{
     height: 60px;
     background-color: #78aebd;
     padding: 0;
-    border: 0
+    border: 0;
+    outline: none;
+    align-content: center;
 }
 
-.buttons-math-operations{
+.buttons-math-operations {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-button{
+.buttons-math-operations button {
     height: 45px;
 }
+
+button#button-info {
+    border: none;
+    background-color: #78aebd;
+    width: 80px;
+}
+

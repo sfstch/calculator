@@ -1,6 +1,8 @@
 "use strict";
 
-function variableOutput(
+function tooltip() {}
+
+function buttonAccessibility(
   inputs,
   additionBtn,
   subtractionBtn,
@@ -33,7 +35,7 @@ function OnChangeInput(
 ) {
   inputs.forEach((input) => {
     input.addEventListener("input", () =>
-      variableOutput(
+      buttonAccessibility(
         inputs,
         additionBtn,
         subtractionBtn,
