@@ -1,11 +1,5 @@
 "use srtrict";
 document.addEventListener("DOMContentLoaded", function () {
-  // const additionBtn = document.getElementById("additionBtn");
-  // const subtractionBtn = document.getElementById("subtractionBtn");
-  // const multiplicationBtn = document.getElementById("multiplicationBtn");
-  // const divisionBtn = document.getElementById("divisionBtn");
-  // const exponentiationBtn = document.getElementById("exponentiationBtn");
-  // const remainderBtn = document.getElementById("remainderBtn");
   const inputs = [
     document.getElementById("numeral1"),
     document.getElementById("numeral2"),
@@ -36,18 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
         case "rem":
           remainder();
           break;
+        default:
+          console.log("действие отсутствует");
       }
       button.addEventListener("click", () => assignment());
     });
 
-    OnChangeInput(
-      inputs,
-      additionBtn,
-      subtractionBtn,
-      multiplicationBtn,
-      divisionBtn,
-      exponentiationBtn,
-      remainderBtn,
-    );
+    OnChangeInput(inputs, buttonsMathOperations);
   });
 });

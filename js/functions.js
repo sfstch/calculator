@@ -1,17 +1,6 @@
 "use strict";
 
-function tooltip() {}
-
-function buttonAccessibility(
-  inputs,
-  additionBtn,
-  subtractionBtn,
-  multiplicationBtn,
-  divisionBtn,
-  exponentiationBtn,
-  remainderBtn,
-  input,
-) {
+function buttonAccessibility(inputs, buttonsMathOperations, input) {
   const isEnabled = inputs.every((elem) => elem.value !== "");
   if (isEnabled == false) {
     console.log("введите значения");
@@ -24,26 +13,10 @@ function buttonAccessibility(
   remainderBtn.disabled = !isEnabled;
 }
 
-function OnChangeInput(
-  inputs,
-  additionBtn,
-  subtractionBtn,
-  multiplicationBtn,
-  divisionBtn,
-  exponentiationBtn,
-  remainderBtn,
-) {
+function OnChangeInput(inputs, buttonsMathOperations) {
   inputs.forEach((input) => {
     input.addEventListener("input", () =>
-      buttonAccessibility(
-        inputs,
-        additionBtn,
-        subtractionBtn,
-        multiplicationBtn,
-        divisionBtn,
-        exponentiationBtn,
-        remainderBtn,
-      ),
+      buttonAccessibility(inputs, buttonsMathOperations),
     );
   });
 }
