@@ -22,33 +22,33 @@ function OnChangeInput(inputs, buttonsMathOperations) {
 }
 
 function assignment() {
-  let numeral1Inp = document.getElementById("numeral1.value");
-  let numeral2Inp = document.getElementById("numeral2.value");
-  let numeral1 = Number(numeral1Inp);
-  let numeral2 = Number(numeral2Inp);
+  let numeral1Inp = document.getElementById("numeral1");
+  let numeral2Inp = document.getElementById("numeral2");
+  const numeral1 = Number(numeral1Inp.value);
+  const numeral2 = Number(numeral2Inp.value);
   return { numeral1, numeral2 };
 }
 
-function addition() {
+function addition(numeral1, numeral2) {
   return numeral1 + numeral2;
 }
 
-function subtraction() {
+function subtraction(numeral1, numeral2) {
   return numeral1 - numeral2;
 }
 
-function multiplication() {
+function multiplication(numeral1, numeral2) {
   return numeral1 * numeral2;
 }
 
-function division() {
+function division(numeral1, numeral2) {
   return numeral1 / numeral2;
 }
 
-function remainder() {
+function remainder(numeral1, numeral2) {
   return numeral1 % numeral2;
 }
 
-function exponentiation() {
+function exponentiation(numeral1, numeral2) {
   return numeral1 ** numeral2;
 }

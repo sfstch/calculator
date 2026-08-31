@@ -1,4 +1,4 @@
-"use srtrict";
+"use strict";
 document.addEventListener("DOMContentLoaded", function () {
   const inputs = [
     document.getElementById("numeral1"),
@@ -14,22 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
       let result;
       switch (buttonName) {
         case "add":
-          result = addition();
+          result = addition(numeral1, numeral2);
           break;
         case "sub":
-          result = subtraction();
+          result = subtraction(numeral1, numeral2);
           break;
         case "multi":
-          result = multiplication();
+          result = multiplication(numeral1, numeral2);
           break;
         case "divi":
-          result = division();
+          result = division(numeral1, numeral2);
           break;
         case "expo":
-          result = exponentiation();
+          result = exponentiation(numeral1, numeral2);
           break;
         case "rem":
-          result = remainder();
+          result = remainder(numeral1, numeral2);
           break;
         default:
           console.log("действие отсутствует");
